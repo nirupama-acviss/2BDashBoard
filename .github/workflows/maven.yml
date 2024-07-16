@@ -22,4 +22,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Run TestNG Tests
-      run: mvn test -Dtestng.suite.name=testng1.xml
+      run: mvn test -Dtestng.suite.name=testng.xml
