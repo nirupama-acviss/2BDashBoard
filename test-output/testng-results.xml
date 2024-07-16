@@ -1,17 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-09T10:58:32 IST" name="Default suite" finished-at="2024-05-09T10:58:32 IST" duration-ms="174">
+  <suite started-at="2024-07-16T15:50:51 IST" name="Suite" finished-at="2024-07-16T15:51:38 IST" duration-ms="47565">
     <groups>
     </groups>
-    <test started-at="2024-05-09T10:58:32 IST" name="Default test" finished-at="2024-05-09T10:58:32 IST" duration-ms="174">
-      <class name="BaseTest">
-        <test-method signature="print()[pri:0, instance:BaseTest@2ad48653]" started-at="2024-05-09T10:58:32 IST" name="print" finished-at="2024-05-09T10:58:32 IST" duration-ms="66" status="PASS">
+    <test started-at="2024-07-16T15:50:51 IST" name="Test" finished-at="2024-07-16T15:51:38 IST" duration-ms="47565">
+      <class name="testpages.LoginPageTest">
+        <test-method is-config="true" signature="setupMethod()[pri:0, instance:testpages.LoginPageTest@776a6d9b]" started-at="2024-07-16T15:50:51 IST" name="setupMethod" finished-at="2024-07-16T15:50:55 IST" duration-ms="4561" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- print -->
-      </class> <!-- BaseTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setupMethod -->
+        <test-method signature="invalidLogin()[pri:0, instance:testpages.LoginPageTest@776a6d9b]" started-at="2024-07-16T15:50:55 IST" name="invalidLogin" finished-at="2024-07-16T15:50:59 IST" duration-ms="3333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:testpages.LoginPageTest@776a6d9b]" started-at="2024-07-16T15:50:59 IST" name="cleanUp" finished-at="2024-07-16T15:50:59 IST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setupMethod()[pri:0, instance:testpages.LoginPageTest@776a6d9b]" started-at="2024-07-16T15:50:59 IST" name="setupMethod" finished-at="2024-07-16T15:51:02 IST" duration-ms="3511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method signature="login()[pri:1, instance:testpages.LoginPageTest@776a6d9b]" started-at="2024-07-16T15:51:02 IST" name="login" finished-at="2024-07-16T15:51:06 IST" duration-ms="3304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:testpages.LoginPageTest@776a6d9b]" started-at="2024-07-16T15:51:06 IST" name="cleanUp" finished-at="2024-07-16T15:51:06 IST" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setupMethod()[pri:0, instance:testpages.LoginPageTest@776a6d9b]" started-at="2024-07-16T15:51:06 IST" name="setupMethod" finished-at="2024-07-16T15:51:09 IST" duration-ms="3748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method signature="validateLoginPageTitle()[pri:2, instance:testpages.LoginPageTest@776a6d9b]" started-at="2024-07-16T15:51:09 IST" name="validateLoginPageTitle" finished-at="2024-07-16T15:51:10 IST" depends-on-methods="testpages.LoginPageTest.login" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginPageTitle -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:testpages.LoginPageTest@776a6d9b]" started-at="2024-07-16T15:51:10 IST" name="cleanUp" finished-at="2024-07-16T15:51:10 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- testpages.LoginPageTest -->
+      <class name="testpages.ManageDataTest">
+        <test-method is-config="true" signature="setupMethod()[pri:0, instance:testpages.ManageDataTest@f19c9d2]" started-at="2024-07-16T15:51:10 IST" name="setupMethod" finished-at="2024-07-16T15:51:13 IST" duration-ms="3707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method signature="addNewInvoice(java.lang.Object)[pri:0, instance:testpages.ManageDataTest@f19c9d2]" started-at="2024-07-16T15:51:13 IST" name="addNewInvoice" data-provider="getData" finished-at="2024-07-16T15:51:24 IST" duration-ms="10590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{BatchNo=1, InvoiceNumber=10031020, NoOfBoxes=5, WareHouse=Bengaluru, FromEntity=TEST, ToEntity=TEST1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewInvoice -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:testpages.ManageDataTest@f19c9d2]" started-at="2024-07-16T15:51:24 IST" name="cleanUp" finished-at="2024-07-16T15:51:24 IST" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setupMethod()[pri:0, instance:testpages.ManageDataTest@f19c9d2]" started-at="2024-07-16T15:51:24 IST" name="setupMethod" finished-at="2024-07-16T15:51:28 IST" duration-ms="3712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method signature="addNewInvoice(java.lang.Object)[pri:0, instance:testpages.ManageDataTest@f19c9d2]" started-at="2024-07-16T15:51:28 IST" name="addNewInvoice" data-provider="getData" finished-at="2024-07-16T15:51:38 IST" duration-ms="10571" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{BatchNo=1, InvoiceNumber=10031020, NoOfBoxes=5, WareHouse=Bengaluru, FromEntity=TEST, ToEntity=TEST2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewInvoice -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:testpages.ManageDataTest@f19c9d2]" started-at="2024-07-16T15:51:38 IST" name="cleanUp" finished-at="2024-07-16T15:51:38 IST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- testpages.ManageDataTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
