@@ -10,7 +10,7 @@ import com.testBase.TestBase;
 
 public class UsersPageTest extends TestBase {
 	
-	ExcelOperations excel=new ExcelOperations("C:\\Users\\Nirupama Nayak\\eclipse-workspace\\Testing\\resources\\testData\\AddNewInvoice.xlsx","Sheet2");
+	ExcelOperations excel=new ExcelOperations("C:\\Users\\Nirupama Nayak\\eclipse-workspace\\Basics\\resources\\testData\\AddNewInvoice.xlsx","Sheet2");
 	@Test(dataProvider="getData")
 	public void addNewInvoice(Object obj) throws Exception {
 		loginpage.login();
