@@ -3,7 +3,11 @@
     <groupId>AcvissWebApplication</groupId>
     <artifactId>AcvissWebApplication</artifactId>
     <version>1.8-SNAPSHOT</version>
-   <dependencies>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+<dependencies>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -52,9 +56,7 @@
             <artifactId>webdrivermanager</artifactId>
             <version>5.5.3</version>
         </dependency>
-
-
-        <!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports-->
+<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports-->
         <dependency>
             <groupId>com.relevantcodes</groupId>
             <artifactId>extentreports</artifactId>
