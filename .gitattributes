@@ -1,0 +1,5 @@
+# Enforce LF endings for consistency
+*.xml text eol=lf
+*.html text eol=lf
+*.csv text eol=lf
+*.java text eol=lf
