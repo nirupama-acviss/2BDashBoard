@@ -18,6 +18,7 @@ public class LoginPage extends TestBase {
 	@FindBy(xpath="//button[@type='submit']")
 	WebElement submit;
 	@FindBy(xpath="//div[contains(text(),'Successfully logged in')]")
+	//@FindBy(xpath="//div[@id='notistack-snackbar']")
 	WebElement successfulmsg;
 	@FindBy(xpath="//div[contains(text(),'Phone number not registered')]")
 	WebElement errormsg;
@@ -34,6 +35,7 @@ public class LoginPage extends TestBase {
 	public boolean login() throws Exception {
 		CommonMethods.sendKeysToElement(MobileNumber,PropertiesOperations.getPropertyValueByKey("mobileno"));
 		CommonMethods.sendKeysToElement(Pin,PropertiesOperations.getPropertyValueByKey("pin"));
+		Thread.sleep(3000);
 		submit.click();
 		Thread.sleep(3000);
 		return successfulmsg.isDisplayed();

@@ -1,7 +1,11 @@
 package com.testBase;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
-
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -10,6 +14,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
+import com.origindashboardpages.HomePage;
 import com.origindashboardpages.LoginPage;
 import com.origindashboardpages.ManageDataPage;
 import com.origindashboardpages.UsersPage;
@@ -23,6 +28,8 @@ public class TestBase {
 	public LoginPage loginpage;
 	public ManageDataPage managedatapage;
 	public UsersPage userspage;
+	public HomePage homepage;
+	
 	
 	
 
@@ -43,8 +50,9 @@ public class TestBase {
 	        options.addArguments("--window-size=1920,1080");*/
 
 	//	if (browser.equalsIgnoreCase("chrome")) {
+		WebDriverManager.chromedriver().setup();
 			ChromeOptions options =new ChromeOptions();
-			options .addArguments("headless");
+			//options .addArguments("headless");
 			driver=new ChromeDriver(options);
 		
 	/*else if(browser.equalsIgnoreCase("firefox")) {
@@ -69,6 +77,7 @@ public class TestBase {
 		loginpage=new LoginPage();
 		managedatapage=new ManageDataPage();
 		userspage=new UsersPage();
+		homepage=new HomePage();
 		
 	}
 
@@ -82,7 +91,14 @@ public class TestBase {
 	
 	
 	
-	
+
+public static void screenshot(String filename) throws IOException {
+	 TakesScreenshot screenshot=((TakesScreenshot)driver);
+	   File sourcefile = screenshot.getScreenshotAs(OutputType.FILE);
+	   File destination= new File(".//Acviss_Webapplication-master//Acviss_Webapplication-master//Screenshot//"+filename+".png");
+	FileUtils.copyFile(sourcefile, destination);
+}
+
 	
 	
 	
